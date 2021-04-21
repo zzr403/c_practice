@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <cstdlib>
+
 #define InitSize 10 //默认最大长度
 typedef struct
 {
