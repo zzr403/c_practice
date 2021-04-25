@@ -4,9 +4,6 @@
 int main()
 {
     int a;
-    printf("��ã�");
-    scanf("%d", &a);
-    printf("%d\n", a);
-    system("pause");
+    printf("你好");
     return 0;
 }
