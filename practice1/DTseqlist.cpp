@@ -1,4 +1,5 @@
-
+#include <stdio.h>
+#include <cstdlib>
 #define InitSize 10 //默认最大长度
 typedef struct
 {
@@ -28,9 +29,11 @@ void IncreaseSize(SeqList &L, int len) //增加动态数组的长度
 
 int main()
 {
-    SeqList L;   //声明一个顺序表
+    SeqList L; //声明一个顺序表
+
     InitList(L); //初始化顺序表
-                 //王顺序表中随便插入几个元素
+    //王顺序表中随便插入几个元素
+
     printf("顺序表的最大长度为：%d\n", L.maxSize);
     printf("现有顺序表的长度为：%d\n", L.length);
 

@@ -1,16 +1,44 @@
 #include <stdio.h>
 #include <cstdlib>
-void test(int x)
+#include <string.h>
+int MIN(int x, int n)
 {
-    x = 1024;
-    printf("test内部函数x=%d\n", x);
+    long int R = 1;
+    for (int i = 0; i < n; i++)
+    {
+        R = R * x;
+    }
+    return R;
 }
+
+int HE(int m)
+{
+    int n = 0, k;
+    while (m > 10)
+    {
+        k = m;
+        m = m / 10;
+        k = k % 10;
+        n = n + k;
+    }
+    n = n + m;
+    return n;
+}
+
 int main()
 {
-    int x = 1;
-    printf("调用test前 x=%d\n", x);
-    test(x);
-    printf("调用test后 x=%d\n", x);
+    int n;
+    //scanf("%d", &n);
+    printf("%d\n", MIN(10, 10));
+    // if (n > MIN(10, 100) || n < 0)
+    {
+        //   return false;
+    }
+
+    int m;
+    m = HE(n);
+    printf("%d", n);
+
     system("pause");
     return 0;
 }
